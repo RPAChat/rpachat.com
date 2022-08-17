@@ -1,11 +1,11 @@
-# WhatsApp Personal Account API For Developers
+# WhatsApp, WeChat, and WeWork Personal Account API For Developers
 
 (Multi-device Supported API)
-Powerful WhatsApp API that enables you to send, receive, and track WhatsApp messages effortlessly
+Powerful Universal API that enables you to send, receive, and track WhatsApp messages effortlessly
 
 # Multi-Agent
 
-Multiple agents can control a WhatsApp Channel
+Multiple agents can control WhatsApp, WeChat, and WeCom Channels
 
 # Rich Media
 
@@ -13,5 +13,4 @@ Enrich your messages with images, audio, video, and files
 
 # Stable API
 
-Multi-device WhatsApp no longer needs a phone connection, so RPAChat provides better uptime compared to the past.
 We have spent the last 6 years helping over 10,000 developers just like yourself, create their successful business.
