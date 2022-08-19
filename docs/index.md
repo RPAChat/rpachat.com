@@ -69,7 +69,7 @@ Pair phone by scanning a QR code to connect to RPAChat
 3. Sending & Receiving Message
 After login the, you can use event driven SDK to send and receive the message
 
-## Just 6 lines of JavaScript, all done !
+## Just 6 lines of JavaScript, all done
 
 ```ts
 import { WechatyBuilder } from 'wechaty'
