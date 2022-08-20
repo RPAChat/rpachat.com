@@ -48,6 +48,8 @@ Build on top of opensource project
 
 We have spent the last 6 years helping over 10,000 developers just like yourself, create their successful business.
 
+Community is a wonderful thing. Connect with ours to discover best practices, untapped solutions, helpful docs, guides, events, blogs, and more. Learn, build, and share with like-minded thinkers.
+
 ## RPAChat-based messaging Platform trusted by enterprises
 
 LOGO 墙（放英文公司）
