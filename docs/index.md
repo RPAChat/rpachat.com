@@ -8,6 +8,10 @@ Powerful chat apps API that enables you to send, receive and track chat apps eff
 
 ## Omnichannel messaging on a single, scalable platform
 
+Support any Chat App in one platform.
+
+Merge all your customer's favourite chat apps into a single, easy-to-use platform.
+
 Powerful Universal API that enables you to send, receive, and track chat app messages effortlessly.
 
 Reach customers on their favorite channels from a single platform
