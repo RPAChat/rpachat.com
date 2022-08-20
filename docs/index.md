@@ -42,9 +42,9 @@ Multi-device WhatsApp/WeChat/WeCom no longer needs a phone connection, so RPACha
 
 ## Open Source Protocol
 
-Build on top of opensource project (参考 beeper)
+By developers, for developers
 
-Trust by developers, used for developers
+Build on top of opensource project
 
 We have spent the last 6 years helping over 10,000 developers just like yourself, create their successful business.
 
