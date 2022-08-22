@@ -7,6 +7,11 @@
   <link href="http://cdn.botorange.com/rpachat/daisyui@2.24.0-full.css" rel="stylesheet" type="text/css" />
   <script src="http://cdn.botorange.com/rpachat/tailwindcss-3.1.8.js"></script>
 
+  <link rel="stylesheet" href="http://cdn.botorange.com/rpachat/highlight-11.6.0-default.min.css">
+  <link rel="stylesheet" href="http://cdn.botorange.com/rpachat/highlight-theme-solarized-light.css">
+  <script src="http://cdn.botorange.com/rpachat/highlight-11.6.0-highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
   <style type="text/tailwindcss">
     p{
       margin: 16px 0;
@@ -22,8 +27,14 @@
       flex-direction: column;
       flex-shrink: 0;
     }
+    .logo-icon-item:first-of-type{
+      margin-left: 0;
+    }
+    .logo-icon-item:last-of-type{
+      margin-right: 0;
+    }
     .logo-icon-item-title{
-      margin-top: 36px;
+      margin-top: 2rem;
       height: 46px;
       line-height: 1;
       display: flex;
@@ -31,24 +42,25 @@
       align-items: center;
       font-weight: 700;
     }
+    .main-layout{
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 
 <body>
   <div>
-    <div class="mx-[10%] leading-10 sm:leading-[120px] inline-flex text-[24px] flex-wrap">
-      <div class="mr-10">
-        <a class="font-black text-[24px]" href="/">RPACHAT.com</a>
-      </div>
-      <div class="mr-10">
-        <a class="cursor-pointer inline-block leading-[32px]"  href="./product.html">Product</a>
-      </div>
-      <div class="mr-10">
-        <a class="cursor-pointer inline-block leading-[32px] " href="https://wechaty.js.org" target="_blank">Developers</a>
+    <div class="main-layout leading-[4rem] sm:leading-[120px] text-[24px] flex flex-col sm:flex-row flex-wrap">
+      <a class="mr-10 font-black text-[24px]" href="/">RPACHAT.com</a>
+      <div class="flex items-center leading-[32px]">
+        <a class="cursor-pointer inline-block mr-10"  href="./product.html">Product</a>
+        <a class="cursor-pointer inline-block mr-10" href="https://wechaty.js.org" target="_blank">Developers</a>
       </div>
     </div>
 
-    <div class="mx-[10%]">
+    <div class="main-layout">
 
       <!-- part 1 -->
       <div class="flex mt-10 flex-wrap">
@@ -235,13 +247,20 @@
             </ul>
           </div>
         </div>
-        <img class="mt-[70px] mx-auto w-full max-w-[1200px]" src="http://cdn.botorange.com/rpachat/index-part-7-code.svg"/>
+        <pre class="text-sm sm:text-lg mt-16"><code class="language-typeScript">import { WechatyBuilder } from 'wechaty'
+
+const wechaty = WechatyBuilder.build() // get a Wechaty instance
+wechaty
+  .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
+  .on('login',            user => console.log(`User ${user} logged in`))
+  .on('message',       message => console.log(`Message: ${message}`))
+wechaty.start()</code></pre>
       </div>
 
     </div>
 
     <footer class="mt-20 pt-20 pb-10 bg-black text-[#FEF9F5]">
-      <h4 class="text-center text-4xl mb-[90px] text-[rgba(254,249,245,0.8)]">We cannot wait to see what you build</h4>
+      <h4 class="text-center text-3xl sm:text-4xl px-[10%] mb-[90px] text-[rgba(254,249,245,0.8)]">We cannot wait to see what you build</h4>
       <div class="flex-col sm:flex-row px-[10%] flex justify-center leading-9 text-[rgba(254,249,245,0.8)]">
         <div class="flex flex-col mb-4">
           <span class="font-bold text-[#FEF9F5]">Product</span> 
@@ -264,7 +283,7 @@
           <a class="link link-hover">Contact</a>
         </div>
       </div>
-      <div class="border border-[rgba(254,249,245,0.4)] border-t-0 mt-16 mb-10 mx-[10%]"></div>
+      <div class="border border-[rgba(254,249,245,0.4)] border-t-0 mt-16 mb-10 main-layout"></div>
       <!-- <div class="mx-auto text-center text-white">
         <span>Friendship link：</span>
         <a class="link link-hover mr-1" href="https://wechaty.js.org/">Wechaty</a>
