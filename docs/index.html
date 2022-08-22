@@ -7,6 +7,11 @@
   <link href="http://cdn.botorange.com/rpachat/daisyui@2.24.0-full.css" rel="stylesheet" type="text/css" />
   <script src="http://cdn.botorange.com/rpachat/tailwindcss-3.1.8.js"></script>
 
+  <link rel="stylesheet" href="http://cdn.botorange.com/rpachat/highlight-11.6.0-default.min.css">
+  <link rel="stylesheet" href="http://cdn.botorange.com/rpachat/highlight-theme-solarized-light.css">
+  <script src="http://cdn.botorange.com/rpachat/highlight-11.6.0-highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
   <style type="text/tailwindcss">
     p{
       margin: 16px 0;
@@ -235,13 +240,20 @@
             </ul>
           </div>
         </div>
-        <img class="mt-[70px] mx-auto w-full max-w-[1200px]" src="http://cdn.botorange.com/rpachat/index-part-7-code.svg"/>
+        <pre class="text-sm sm:text-lg mt-16"><code class="language-typeScript">import { WechatyBuilder } from 'wechaty'
+
+const wechaty = WechatyBuilder.build() // get a Wechaty instance
+wechaty
+  .on('scan', (qrcode, status) => console.log(`Scan QR Code to login: ${status}\nhttps://wechaty.js.org/qrcode/${encodeURIComponent(qrcode)}`))
+  .on('login',            user => console.log(`User ${user} logged in`))
+  .on('message',       message => console.log(`Message: ${message}`))
+wechaty.start()</code></pre>
       </div>
 
     </div>
 
     <footer class="mt-20 pt-20 pb-10 bg-black text-[#FEF9F5]">
-      <h4 class="text-center text-4xl mb-[90px] text-[rgba(254,249,245,0.8)]">We cannot wait to see what you build</h4>
+      <h4 class="text-center text-3xl sm:text-4xl px-[10%] mb-[90px] text-[rgba(254,249,245,0.8)]">We cannot wait to see what you build</h4>
       <div class="flex-col sm:flex-row px-[10%] flex justify-center leading-9 text-[rgba(254,249,245,0.8)]">
         <div class="flex flex-col mb-4">
           <span class="font-bold text-[#FEF9F5]">Product</span> 
