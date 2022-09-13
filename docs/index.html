@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="http://cdn.botorange.com/rpachat/daisyui@2.24.0-full.css" rel="stylesheet" type="text/css" />
   <script src="http://cdn.botorange.com/rpachat/tailwindcss-3.1.8.js"></script>
+  <script src="http://cdn.botorange.com/rpachat/jquery-3.6.1.min.js"></script>
 
   <link rel="stylesheet" href="http://cdn.botorange.com/rpachat/highlight-11.6.0-default.min.css">
   <link rel="stylesheet" href="http://cdn.botorange.com/rpachat/highlight-theme-solarized-light.css">
@@ -22,6 +23,7 @@
     }
     .logo-icon-item{
       margin: 16px;
+      margin-top: 0;
       width: 104px;
       display: flex;
       flex-direction: column;
@@ -54,7 +56,7 @@
   <div>
     <div class="main-layout leading-[4rem] sm:leading-[120px] text-[24px] flex flex-col sm:flex-row flex-wrap">
       <a class="mr-10 font-black text-[24px]" href="/">RPACHAT.com</a>
-      <div class="flex items-center leading-[32px]">
+      <div class="flex items-center leading-[32px] text-xl">
         <a class="cursor-pointer inline-block mr-10"  href="./product.html">Product</a>
         <a class="cursor-pointer inline-block mr-10" href="https://wechaty.js.org" target="_blank">Developers</a>
       </div>
@@ -78,13 +80,13 @@
 
 
       <!-- part 2 -->
-      <div class="mt-[140px] text-xl">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center">Use one Powerful Universal API in any Chat Apps</h2>
+      <div class="mt-[110px] text-xl">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">Use one Powerful Universal API in any Chat Apps</h2>
         <!-- <p class="text-center font-light mb-10">See why we can do that→ </p> -->
-        <p class="text-center mb-0">You don't need to use different interfaces for each Chat Apps. Just change one variable, all is done!</p>
-        <p class="text-center mt-0">After use our service, your chatbot application on one chat app(e.g. WeChat) can be switched to
+        <p class="text-center mb-0 text-lg">You don't need to use different interfaces for each Chat Apps. Just change one variable, all is done!</p>
+        <p class="text-center mt-0 text-lg">After use our service, your chatbot application on one chat app(e.g. WeChat) can be switched to
           another one(e.g. WhatsApp) within only 5 minutes.</p>
-        <div class="flex justify-center text-center flex-wrap">
+        <div class="flex justify-center text-center flex-wrap mt-10">
           <div class="logo-icon-item">
             <img src="http://cdn.botorange.com/rpachat/logo-icon-qq.svg" />
             <span class="logo-icon-item-title">QQ</span>
@@ -131,11 +133,11 @@
 
       <!-- part 3 -->
       <div class="mt-[140px] text-xl">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center">We make the impossible things possible with RPA</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">We make the impossible things possible with RPA</h2>
         <!-- <p class="text-center font-light mb-10">See why we can do that→ </p> -->
-        <p class="text-center mb-0">The applications you want to automate usually does not provide an open API. </p>
-        <p class="text-center mt-0">We provide an industry-exclusive RPA robot that allows you to control it extremely easily.</p>
-        <div class="mx-auto flex justify-center mt-10 flex-wrap">
+        <p class="text-center mb-0 text-lg">The applications you want to automate usually does not provide an open API. </p>
+        <p class="text-center mt-0 text-lg">We provide an industry-exclusive RPA robot that allows you to control it extremely easily.</p>
+        <div class="mx-auto flex justify-center mt-10 flex-wrap sm:hidden">
           <div class="w-[362px]">
             <img src="http://cdn.botorange.com/rpachat/index-part-3-1.svg" />
             <p class="text-xl text-center font-bold">STEP 1</p>
@@ -155,11 +157,37 @@
               effect you want.</p>
           </div>
         </div>
+        <div class="hidden sm:block mt-10">
+          <div class="flex justify-between">
+            <div id="index-part-3-tabs">
+              <div class="w-[548px] h-[126px] rounded-[26px] px-5 text-black bg-[#201F1F] text-white">
+                <p class="text-xl text-left font-bold mt-0 mb-[10px] pt-[16px]">STEP 1</p>
+                <p class="text-xl my-0">We use the RPA robot on the cloud computer to simulate clicks like a real person to
+                  achieve automation.</p>
+              </div>
+              <div class="w-[548px] h-[126px] rounded-[26px] px-5 text-black">
+                <p class="text-xl text-left font-bold mt-0 mb-[10px] pt-[16px]">STEP 2</p>
+                <p class="text-xl">We let the RPA robot communicate with your program according to the standard interface.
+                </p>
+              </div>
+              <div class="w-[548px] h-[126px] rounded-[26px] px-5 text-black">
+                <p class="text-xl text-left font-bold mt-0 mb-[10px] pt-[16px]">STEP 3</p>
+                <p class="text-xl">With the shortest six lines of code, you can control your Chat App account to achieve the
+                  effect you want.</p>
+              </div>
+            </div>
+            <div id="index-part-3-images" class="flex items-center">
+              <img src="http://cdn.botorange.com/rpachat/index-part-3-1.svg" />
+              <img src="http://cdn.botorange.com/rpachat/index-part-3-2.svg" class="hidden" />
+              <img src="http://cdn.botorange.com/rpachat/index-part-3-3.svg" class="hidden" />
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- part 4 -->
       <div class="mt-[140px] text-xl">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center">We offer Developer-friendly APIs for any scale</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">We offer Developer-friendly APIs for any scale</h2>
         <!-- <p class="text-center font-light mb-10">See why we can do that→ </p> -->
         <!-- <p class="text-center mb-0">The applications you want to automate usually does not provide an open API. </p> -->
         <!-- <p class="text-center mt-0">We provide an industry-exclusive RPA robot that allows you to control it extremely -->
@@ -168,19 +196,19 @@
           <div class="w-[362px]">
             <img src="http://cdn.botorange.com/rpachat/index-part-4-1.svg" />
             <p class="text-xl text-center font-bold">All on the cloud</p>
-            <p class="text-xl">You don't need to think about deploying a separate server to run the robot, you just need
+            <p class="text-xl text-center">You don't need to think about deploying a separate server to run the robot, you just need
               to concentrate on the business code.</p>
           </div>
           <div class="w-[362px] mx-8">
             <img src="http://cdn.botorange.com/rpachat/index-part-4-2.svg" />
             <p class="text-xl text-center font-bold">Well-designed interface</p>
-            <p class="text-xl">Our interface can be accessed with as little as six lines of code, covering multiple
+            <p class="text-xl text-center">Our interface can be accessed with as little as six lines of code, covering multiple
               programming languages ​​e.g.Typescript\Java\Python\Go.</p>
           </div>
           <div class="w-[362px]">
             <img src="http://cdn.botorange.com/rpachat/index-part-4-3.svg" />
             <p class="text-xl text-center font-bold">Strong stability</p>
-            <p class="text-xl">Multi-device WhatsApp/WeChat/WeCom no longer needs a phone connection, so RPAChat
+            <p class="text-xl text-center">Multi-device WhatsApp/WeChat/WeCom no longer needs a phone connection, so RPAChat
               provides better uptime compare to the past.</p>
           </div>
         </div>
@@ -191,30 +219,35 @@
         <h2 class="text-2xl sm:text-3xl font-bold text-center">We build on top of Open Source Project, by developers, for developers
         </h2>
         <p class="text-center font-light mb-10"><a href="https://wechaty.js.org/2021/05/30/wechaty-local-forums-and-past-events/" target="_blank"> See why we can do that→ </a> </p>
-        <p class="text-center mb-0">We have spent the last 6 years helping over 10,000 developers just like yourself,
+        <p class="text-center mb-0 text-lg">We have spent the last 6 years helping over 10,000 developers just like yourself,
           create their successful business.</p>
-        <p class="text-center mt-0 mx-auto max-w-[1130px]">Connect with ours to discover
+        <p class="text-center mt-0 mx-auto max-w-[1130px] text-lg">Connect with ours to discover
           best practices, untapped solutions, helpful docs, guides, events, blogs, and more. Learn, build, and share
           with like-minded thinkers.</p>
-        <div class="mx-auto flex justify-center mt-10">
-          <div class="w-[362px]">
-            <img src="http://cdn.botorange.com/rpachat/index-part-5-1.svg" />
-            <p class="text-xl text-center font-bold">6 Years</p>
-          </div>
-          <div class="w-[362px] mx-8">
-            <img src="http://cdn.botorange.com/rpachat/index-part-5-2.svg" />
-            <p class="text-xl text-center font-bold">10,000 Developers</p>
-          </div>
-          <div class="w-[362px]">
-            <img src="http://cdn.botorange.com/rpachat/index-part-5-3.svg" />
-            <p class="text-xl text-center font-bold">13,000 Stars</p>
+        <div class="h-[180px] sm:h-[220px] mx-auto  mt-[86px] border-[3px] rounded-3xl border-[#1D1D1B] bg-white">
+          <div class="flex justify-around -translate-y-[34px] sm:-translate-y-[46px]">
+            <div class="flex flex-col flex-1 items-center">
+              <img src="http://cdn.botorange.com/rpachat/index-part-5-1.svg" class="h-[60px] sm:h-[88px]"/>
+              <div class="text-2xl sm:text-[2.75rem] font-bold mt-10 mb-4">6</div>
+              <div class="text-lg sm:text-2xl">Years</div>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+              <img src="http://cdn.botorange.com/rpachat/index-part-5-2.svg" class="h-[60px] sm:h-[88px]"/>
+              <div class="text-2xl sm:text-[2.75rem] font-bold mt-10 mb-4">10,000</div>
+              <div class="text-lg sm:text-2xl">Developers</div>
+            </div>
+            <div class="flex flex-col flex-1 items-center">
+              <img src="http://cdn.botorange.com/rpachat/index-part-5-3.svg" class="h-[60px] sm:h-[88px]"/>
+              <div class="text-2xl sm:text-[2.75rem] font-bold mt-10 mb-4">13,000</div>
+              <div class="text-lg sm:text-2xl">Stars</div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- part 6 -->
       <div class="mt-[140px] text-xl">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center">RPAChat-based messaging Platform trusted by enterprises</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">RPAChat-based messaging Platform trusted by enterprises</h2>
         <!-- <p class="text-center font-light mb-10">See why we can do that→ </p> -->
         <div class="flex justify-center">
           <div class="flex flex-wrap justify-center max-w-[calc(205px*5)]">
@@ -233,7 +266,7 @@
       </div>
 
       <!-- part 7 -->
-      <div class="mt-[140px] text-xl">
+      <div class="mt-[110px] text-xl">
         <h2 class="text-2xl sm:text-3xl font-bold text-center">Just 6 lines of JavaScript, all done</h2>
         <p class="text-center font-light mb-10"><a href="https://wechaty.js.org/docs/" target="_blank"> Read Docs → </a></p>
         <div class="flex justify-center flex-wrap sm:flex-nowrap">
@@ -257,10 +290,35 @@ wechaty
 wechaty.start()</code></pre>
       </div>
 
+      <!-- part 8 -->
+      <div class="mt-[140px] text-xl">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">Let's Get Started</h2>
+        <div class="mx-auto flex justify-center mt-10 flex-wrap">
+          <div class="w-[380px] h-[448px] relative border-2 border-black rounded-[20px] p-5 my-4 text-center">
+            <img src="http://cdn.botorange.com/rpachat/index-part-8-1.svg" class="m-auto"/>
+            <p class="text-xl text-center font-bold">Tutorials</p>
+            <p class="text-xl">If you are a tota beginner to Wechaty Or Chatbot application development in general, we recommend you start from the tutorials.</p>
+            <a class="mt-8 font-light absolute bottom-10 left-[50%] -translate-x-[50%]" target="_blank" href="https://wechaty.js.org/docs/tutorials/">Take me there→ </a>
+          </div>
+          <div class="w-[380px] h-[448px] relative border-2 border-black rounded-[20px] p-5 sm:mx-[30px] my-4 text-center">
+            <img src="http://cdn.botorange.com/rpachat/index-part-8-2.svg" class="m-auto"/>
+            <p class="text-xl text-center font-bold">How-to Guides</p>
+            <p class="text-xl">They are more advanced than tutorials and pre requisite knowledge is required of how Wechaty works.</p>
+            <a class="mt-8 font-light absolute bottom-10 left-[50%] -translate-x-[50%]" target="_blank" href="https://wechaty.js.org/docs/howto/">Take me there→ </a>
+          </div>
+          <div class="w-[380px] h-[448px] relative border-2 border-black rounded-[20px] p-5 my-4 text-center">
+            <img src="http://cdn.botorange.com/rpachat/index-part-8-3.svg" class="m-auto"/>
+            <p class="text-xl text-center font-bold">References</p>
+            <p class="text-xl">References contain technical reference for APls and other aspects of Wechaty's machinery.</p>
+            <a class="mt-8 font-light absolute bottom-10 left-[50%] -translate-x-[50%]" target="_blank" href="https://wechaty.js.org/docs/references/">Take me there→ </a>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <footer class="mt-20 pt-20 pb-10 bg-black text-[#FEF9F5]">
-      <h4 class="text-center text-3xl sm:text-4xl px-[10%] mb-[90px] text-[rgba(254,249,245,0.8)]">We cannot wait to see what you build</h4>
+      <h4 class="text-center text-3xl sm:text-4xl px-[10%] mb-[90px] text-[rgba(254,249,245,0.8)] font-['Times_New_Roman'] italic">We cannot wait to see what you build</h4>
       <div class="flex-col sm:flex-row px-[10%] flex justify-center leading-9 text-[rgba(254,249,245,0.8)]">
         <div class="flex flex-col mb-4">
           <span class="font-bold text-[#FEF9F5]">Product</span> 
@@ -293,6 +351,14 @@ wechaty.start()</code></pre>
       <div class="mt-[20px] mx-auto text-center font-bold">COPYRIGHT © Juzi.bot</div>
     </footer>
 
+    <script>
+      $('#index-part-3-tabs > div').each(function (i, elem) {
+        $(this).on('click', function () {
+          $(this).addClass('bg-[#201F1F] text-white').siblings().removeClass('bg-[#201F1F] text-white');
+          $('#index-part-3-images > img').hide().eq(i).show();
+        })
+      })
+    </script>
   </div>
 </body>
 
