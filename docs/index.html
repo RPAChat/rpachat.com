@@ -1,6 +1,19 @@
 <!doctype html>
 <html>
 <head>
+
+  <script type="text/javascript">
+  function loadScript(url, apikey) { var script =
+  document.createElement("script"); script.type = "text/javascript";
+  script.src = url; script.setAttribute("uploadmethod","grpc");
+  script.setAttribute("batchmax","20"); script.setAttribute("sendovertime",
+  "20000"); script.setAttribute("storesize","100");
+  script.setAttribute("id", "eaRecordScript");
+  script.setAttribute("projectKey", apikey);
+  document.head.appendChild(script); }
+  loadScript('https://edge.userview.net/uv/1.1.6/record.js', '2ff2eabca51d45278309f3945e437a36')
+  </script>
+
   <title>The next generation of business messaging</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
