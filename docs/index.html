@@ -18,7 +18,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="http://cdn.botorange.com/rpachat/favicon.svg" type="image/x-icon">
-  <link href="http://cdn.botorange.com/rpachat/daisyui@2.24.0-full.css" rel="stylesheet" type="text/css" />
   <script src="http://cdn.botorange.com/rpachat/tailwindcss-3.1.8.js"></script>
   <script src="http://cdn.botorange.com/rpachat/jquery-3.6.1.min.js"></script>
 
@@ -62,6 +61,19 @@
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
+    }
+    .link{
+      cursor: pointer;
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+    }
+    .link-hover{
+      -webkit-text-decoration-line: none;
+      text-decoration-line: none;
+    }
+    .link-hover:hover {
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
     }
   </style>
 </head>
